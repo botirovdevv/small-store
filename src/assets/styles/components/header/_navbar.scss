@@ -1,0 +1,31 @@
+.nav {
+
+  &-container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+
+  &-content{
+    @include flex(center, space-between)
+  }
+
+  &-logo_link{
+    width: 60px;
+  }
+
+  &-logo{
+    width: 100%;
+  }
+
+  &-links{
+    @include flex(center, unset);
+    gap: 15px;
+  }
+
+  &-link{
+    @include adaptive-value('font-size', 19, 17);
+    font-weight: 400;
+  }
+}
