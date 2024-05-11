@@ -1,3 +1,32 @@
 .backet{
     padding-top: 150px;
+
+    &-title{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    &-card{
+        @include flex(start, center);
+        flex-direction: column;
+        padding: 30px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 6px;
+    }
+
+    &-cards{
+        @include flex(center, center);
+        gap: 30px;
+        padding-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    &-delete{
+        width: 100%;
+    }
+
+    &-buttons{
+        @include flex(center, start);
+        gap: 20px;
+    }
 }
